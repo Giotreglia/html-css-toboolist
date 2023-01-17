@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif, serif;
-    color: rgb(0, 21, 51);
 }
 
 body {
@@ -13,6 +12,7 @@ body {
 header {
     height: 100px;
     background-color: white;
+    color: rgb(0, 21, 51);
 }
 
 #logo {
@@ -31,11 +31,107 @@ header {
     color: rgb(56, 169, 255);
 }
 
-main {
+.container {
     width: 800px;
     height: 600px;
     background-color: white;
     margin: auto;
     margin-top: 60px;
+    border-radius: 5px;
 } 
 
+#button_menu {
+    border-bottom: solid 1px lightgrey;
+}
+
+#button_container {
+    margin: 10px 0px 10px 50px;
+}
+.add_button {
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    border: solid 1px lightgrey;
+    background-color: white;
+}
+.task {
+    background-color: rgb(56, 169, 255);
+}
+
+#todolist_container {
+    padding: 0px 50px 0px 50px;
+}
+
+.list_section {
+    margin: 30px 0px 20px 0px;
+}
+.list_title {
+    font-weight: bold;  
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+}
+
+.list_title::before {
+    content: "\2714";
+    margin-right: 5px;
+}
+
+.list_item {
+    font-weight: 400;  
+    font-size: 14px;
+    margin: 10px 0px 20px 0px;
+}
+
+.category {
+    border-radius: 15px;
+    padding: 5px 8px 5px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.editorial {
+    background-color: rgb(56, 169, 255);
+}
+
+.q1_goals {
+    background-color: rgb(171, 92, 230);
+}
+
+.recruiting {
+    background-color: rgb(44, 198, 171);
+}
+
+.mobile {
+    background-color: rgb(250, 155, 0);
+}
+
+.website {
+    background-color: rgb(236, 74, 157);
+}
+
+.sales {
+    background-color: rgb(163, 209, 20);
+}
+
+.list_item::before {
+    border-radius: 50%;
+    padding: 2px 4px;
+    font-size: 10px;  
+    font-weight: bold;  
+    margin-right: 5px;
+}
+
+.list_item.done::before {
+    content: "\2713";
+    color: green;
+    border: solid 1px green;
+}
+
+.list_item.undone::before {
+    content: "\2715";
+    color: red;
+    border: solid 1px red;
+}
